@@ -1,0 +1,192 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "Web Services Scuola - REST",
+  "collectionId": "scuola-rest-001",
+  "dateExported": "2024-01-01",
+  "version": "1.2",
+  "folders": [
+    {
+      "id": "folder-calc",
+      "name": "🔢 Calcolatrice REST",
+      "containerId": ""
+    },
+    {
+      "id": "folder-rubrica",
+      "name": "📞 Rubrica REST",
+      "containerId": ""
+    },
+    {
+      "id": "folder-libreria",
+      "name": "📚 Libreria REST",
+      "containerId": ""
+    }
+  ],
+  "requests": [
+    {
+      "id": "req-001",
+      "url": "http://localhost:8081/api/calcolatrice/somma?a=10&b=5",
+      "method": "GET",
+      "name": "Somma (10+5)",
+      "containerId": "folder-calc",
+      "headers": [],
+      "body": { "type": "none" },
+      "tests": []
+    },
+    {
+      "id": "req-002",
+      "url": "http://localhost:8081/api/calcolatrice/sottrazione?a=10&b=5",
+      "method": "GET",
+      "name": "Sottrazione (10-5)",
+      "containerId": "folder-calc",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-003",
+      "url": "http://localhost:8081/api/calcolatrice/moltiplicazione?a=4&b=3",
+      "method": "GET",
+      "name": "Moltiplicazione (4x3)",
+      "containerId": "folder-calc",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-004",
+      "url": "http://localhost:8081/api/calcolatrice/divisione?a=10&b=2",
+      "method": "GET",
+      "name": "Divisione (10/2)",
+      "containerId": "folder-calc",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-005",
+      "url": "http://localhost:8081/api/calcolatrice/divisione?a=10&b=0",
+      "method": "GET",
+      "name": "Divisione per ZERO → errore 400",
+      "containerId": "folder-calc",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-010",
+      "url": "http://localhost:8081/api/contatti",
+      "method": "GET",
+      "name": "GET tutti i contatti",
+      "containerId": "folder-rubrica",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-011",
+      "url": "http://localhost:8081/api/contatti/1",
+      "method": "GET",
+      "name": "GET contatto ID=1",
+      "containerId": "folder-rubrica",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-012",
+      "url": "http://localhost:8081/api/contatti/99",
+      "method": "GET",
+      "name": "GET contatto ID=99 → 404 Not Found",
+      "containerId": "folder-rubrica",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-013",
+      "url": "http://localhost:8081/api/contatti",
+      "method": "POST",
+      "name": "POST aggiungi contatto",
+      "containerId": "folder-rubrica",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Paolo Neri\",\n  \"telefono\": \"345-4444444\",\n  \"email\": \"paolo@email.it\"\n}"
+      }
+    },
+    {
+      "id": "req-014",
+      "url": "http://localhost:8081/api/contatti/1",
+      "method": "PUT",
+      "name": "PUT aggiorna contatto ID=1",
+      "containerId": "folder-rubrica",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"Mario Rossi Aggiornato\",\n  \"telefono\": \"333-9999999\",\n  \"email\": \"mario.nuovo@email.it\"\n}"
+      }
+    },
+    {
+      "id": "req-015",
+      "url": "http://localhost:8081/api/contatti/3",
+      "method": "DELETE",
+      "name": "DELETE contatto ID=3",
+      "containerId": "folder-rubrica",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-020",
+      "url": "http://localhost:8081/api/libri",
+      "method": "GET",
+      "name": "GET tutti i libri",
+      "containerId": "folder-libreria",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-021",
+      "url": "http://localhost:8081/api/libri?autore=Eco",
+      "method": "GET",
+      "name": "GET libri filtro autore=Eco",
+      "containerId": "folder-libreria",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-022",
+      "url": "http://localhost:8081/api/libri/2",
+      "method": "GET",
+      "name": "GET libro ID=2",
+      "containerId": "folder-libreria",
+      "headers": [],
+      "body": { "type": "none" }
+    },
+    {
+      "id": "req-023",
+      "url": "http://localhost:8081/api/libri",
+      "method": "POST",
+      "name": "POST aggiungi libro",
+      "containerId": "folder-libreria",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"titolo\": \"1984\",\n  \"autore\": \"George Orwell\",\n  \"anno\": 1949\n}"
+      }
+    },
+    {
+      "id": "req-024",
+      "url": "http://localhost:8081/api/libri/1",
+      "method": "PUT",
+      "name": "PUT aggiorna libro ID=1",
+      "containerId": "folder-libreria",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"titolo\": \"Il Nome della Rosa (Edizione Speciale)\",\n  \"autore\": \"Umberto Eco\",\n  \"anno\": 2023\n}"
+      }
+    },
+    {
+      "id": "req-025",
+      "url": "http://localhost:8081/api/libri/3",
+      "method": "DELETE",
+      "name": "DELETE libro ID=3",
+      "containerId": "folder-libreria",
+      "headers": [],
+      "body": { "type": "none" }
+    }
+  ]
+}
