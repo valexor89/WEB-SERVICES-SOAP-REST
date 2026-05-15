@@ -27,6 +27,14 @@
             <version>2.3.5</version>
         </dependency>
 
+        <!-- Source: https://mvnrepository.com/artifact/jakarta.xml.ws/jakarta.xml.ws-api -->
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>4.0.3</version>
+            <scope>compile</scope>
+        </dependency>
+
         <!-- ===== JAX-RS (REST) - implementazione Jersey ===== -->
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
