@@ -65,6 +65,9 @@ Premi **CTRL+C** nel terminale.
 
 Wizdler è un'estensione Chrome che legge il WSDL e genera automaticamente i form per chiamare il servizio.
 
+EDIT: Widzler non sembra funzionare oppure essere supportata.
+Usare al suo posto l'estensione Boomerang
+
 ### Come usarlo:
 1. Apri **Google Chrome**
 2. Vai all'URL del WSDL, ad esempio:

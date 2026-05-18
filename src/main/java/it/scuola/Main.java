@@ -18,7 +18,7 @@ import java.util.List;
 public class Main {
 
     private static final String SOAP_HOST = "http://localhost:8080/";
-    private static final String REST_HOST = "http://localhost:8081/";
+    private static final String REST_HOST = "http://localhost:8081/api/";
 
     private static final List<Endpoint> SOAP_ENDPOINTS = new ArrayList<>();
     private static HttpServer restServer;
